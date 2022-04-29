@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <header id="Myheader">
+        <h1 id="Myh1">Register</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="Register.html">Register</a></li>
+                <li><a href="List.html">List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="Register.php" method="GET" class="form">
+        <fieldset>
+            <legend>Register</legend>
+            <label for="name">Name</label>
+            <input type="text"name="name" id="name" placeholder="Your name">  
+            <br><br>
+            <label for="lastname">Last name:</label>
+            <input type="text"name="lastname" id="lastname" placeholder="Your lastname">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" >
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Your password">
+            <br><br>
+            <label for="r_password">Re-type Password:</label>
+            <input type="password" name="r_password" id="r_password" placeholder="Your re-type password">
+            <br><br>
+            <label for="course"> Courses:</label>
+            <label for="course1"> HTML</label>
+            <input type="checkbox" name="courses[]" id="course1" value="HTML">
+            <label for="course2"> CSS</label>
+            <input type="checkbox" name="courses[]" id="course2" value="CSS" >
+            <label for="course3"> JS</label>
+            <input type="checkbox" name="courses[]" id="course3" value="JS" >
+            <br><br>
+            <button type="submit">Save</button>
+            <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
+    </main>
+</body>
+</html>
