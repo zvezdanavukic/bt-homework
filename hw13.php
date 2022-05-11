@@ -7,7 +7,7 @@ function cir_rec_area ($a,$b) {
 echo "Mix of half circle and rectangle surface area of the pool is " . ( round ( cir_rec_area(6,4)  , 2)) . "<br>";
 
 
-//Circle surface area of the poll
+//Circle surface area of the pool
 function circle_area ($raduis) {
     $circleArea = pi() * ($raduis * $raduis);
     return $circleArea;
